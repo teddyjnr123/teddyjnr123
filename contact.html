@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Volta River Authority</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html"><img src="vra.jpg" alt="VRA Logo" class="logo" /></a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container contact-container">
+
+    <section class="contact-intro">
+      <h1>Contact Volta River Authority</h1>
+      <p>We’d love to hear from you! Whether you have questions, feedback, or need assistance, reach out to us through the form below or via our contact details.</p>
+    </section>
+
+    <section class="contact-content">
+
+      <!-- Contact Form -->
+      <form id="contactForm" class="contact-form" novalidate>
+        <h2>Send Us a Message</h2>
+        <label for="name">Full Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="subject">Subject <span class="required">*</span></label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+        <p id="formMessage" class="form-message"></p>
+      </form>
+
+      <!-- Contact Details & Map -->
+      <div class="contact-info">
+
+        <h2>Our Offices</h2>
+        <div class="office">
+          <h3>Head Office - Accra</h3>
+          <p>Volta River Authority<br />
+             P.O. Box M34, Accra, Ghana<br />
+             Phone: +233 30 276 1234<br />
+             Email: info@vra.com.gh</p>
+          <img src="renewable.jpg" alt="VRA Head Office Accra" />
+        </div>
+
+        <div class="office">
+          <h3>Akosombo Power Station</h3>
+          <p>Akosombo, Eastern Region<br />
+             Phone: +233 34 560 7890<br />
+             Email: akosombo@vra.com.gh</p>
+          <img src="service.jpg" alt="Akosombo Power Station" />
+        </div>
+
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+          <!-- Replace the iframe src with the actual Google Map embed URL -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.123456789!2d-0.20769168483481784!3d5.563619695481126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf89e73b22b56b%3A0x33c4b31f7a1f2de1!2sVolta%20River%20Authority!5e0!3m2!1sen!2sgh!4v1597891012345!5m2!1sen!2sgh"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Volta River Authority. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
